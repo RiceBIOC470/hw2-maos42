@@ -93,11 +93,11 @@ plotProbabilityORF(400)
 % which reading frame to use). Make your code returns an error and
 % appropriate message if frame isn't 1,2, or 3. 
 
+%IMPORTANT !!!!
 %READ ME !!!!!
 %Miguel Angel: I've optimized the function, so that you only have to input
-%your sequence, and my function will give you the possible peptides that
-%could come from the 3 readable frames and if there is more than one
-%possible peptide within the same ORF it will notify you as well.
+%your sequence, and my function will give you the longest possible peptides that
+%could come from each of the 3 readable frames. 
 
 dna2protein()
 
@@ -107,7 +107,9 @@ dna2protein()
 % different codons that correspond to the amino acid Gly. For a first pass,
 % choose one of these codons at random.
 
+%Miguel Angel: I just put an example of the input for a p sequence.
 
+protein2dna('GlnGluTyrValAspGlyValIleGluGlySerGluGlu')
 
 % Part 3. The third column of the codons.csv file contains the frequency of
 % this codon's use in the human proteome in units of number of appearances per
@@ -123,3 +125,5 @@ dna2protein()
 % In other words, for any amino acid, it always uses the codon that appears
 % most frequently in the human proteome. 
 %
+
+protein2dnaOptimized('GlnGluTyrValAspGlyValIleGluGlySerGluGlu')
