@@ -27,16 +27,15 @@ zz = meannonan(xx);
 % and produces a row vector where each entry is the average of each column
 % and in the column with a NaN, this NaN is ignored. 
 
-%Miguel Angel: this is the meannonan function already modified:
-meannonan(xx)
+
+
+
 
 %% Problem 2. ORFs using functions
 % In this problem we will use functions to simplify and extend our code from HW1, prob 2 
 
 % Part 1. Fill in the function randdnaseq.m in this repository so that it returns a random sequence
 % of length N. 
-
-randdnaseq(500)
 
 % Part 2. Fill in the function findORF.m in this repository so that takes any dna
 % sequence as an input and returns the length of the longest open
@@ -46,17 +45,10 @@ randdnaseq(500)
 % sequence is uppercase, lowercase, or some mixture. The builtin MATLAB functions
 % lower and upper could be useful for this. 
 
-findORF(randdnaseq(500))
-
 % Part 3. Write another function called probabilityORF that utilizes the functions from 
 % Parts 1 and 2. It should take two inputs - a sequence length (N) and an length  of an ORF (N_ORF) and
 % returns the probability that that a sequence of length N contains an ORF
 % of at least length N_ORF
-
-%Miguel Angel: the first input is the length of the sequence, the second
-%the minimum size of the ORFs.
-
-probabilityORF(500,50)
 
 % Part4. Write  a final function called plotProbabilityORF.m which takes
 % N_ORF as an argument and makes a plot of the probabily of having an
@@ -64,20 +56,9 @@ probabilityORF(500,50)
 % code should determine the lengths of dna sequence to test and implement
 % your decision. 
 
-%Miguel Angel: you only have to input the length of the desired ORFs. 
-plotProbabilityORF(50)
-
 % Part 5. Write code that uses your function from part 4 to make a single
 % plot with separate curves for ORF lengths 100,200,300,and 400. Make sure
 % your plot has appropriate axis labels and legend. 
-
-plotProbabilityORF(100)
-hold on
-plotProbabilityORF(200)
-hold on
-plotProbabilityORF(300)
-hold on
-plotProbabilityORF(400)
 
 %% Problem 3. Codon translation and optimization
 
@@ -93,22 +74,13 @@ plotProbabilityORF(400)
 % which reading frame to use). Make your code returns an error and
 % appropriate message if frame isn't 1,2, or 3. 
 
-%READ ME !!!!!
-%Miguel Angel: I've optimized the function, so that you only have to input
-%your sequence, and my function will give you the possible peptides that
-%could come from the 3 readable frames and if there is more than one
-%possible peptide within the same ORF it will notify you as well.
-
-dna2protein()
 
 % Part 2. Write code to turn your protein sequence back into DNA sequence.
 % Call your function protein2dna.m
 % Notice that there isn't a unique way to do this. For example, there are 4
 % different codons that correspond to the amino acid Gly. For a first pass,
 % choose one of these codons at random.
-
-
-
+%
 % Part 3. The third column of the codons.csv file contains the frequency of
 % this codon's use in the human proteome in units of number of appearances per
 % thousand codons. Some codons are used more than others. For example,
