@@ -1,3 +1,16 @@
+% GB Comments
+1b. 100 
+2a. 100
+2b. 100
+2c. 100
+2d. 100
+2e. 75 the final produced graphs display the correct trends but each plot stops excuting prematurely which results in truncated curves. 
+3a.  100
+3b. 75 the code doesn’t work if all bounds are not met. Some simple code could have been added to ensure the user (me) knows that. Instead I returned errors and could figure out that I could just extend the sequence I used as the input. 
+3c.  100
+Overall: 95
+
+
 %% Problem 1. 
 % in the repository you will find the meannonan.m function we discussed in
 % class which produced the mean of a vector of numbers that ignores values
